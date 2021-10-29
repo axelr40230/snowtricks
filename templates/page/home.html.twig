@@ -1,19 +1,24 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid  h-100">
             <div class="row">
-                <div class="col p-0">
-                    <img src="http://placehold.it/1920x500" alt="">
+                <div class="col p-0 text-center justify-content-center align-self-center">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="http://placehold.it/1920x500" alt="Card image">
+                        <div class="card-img-overlay d-flex ">
+                            <h1 class="card-title w-100 text-uppercase d-flex justify-content-center align-self-center">{{ title }}</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>{{ title }}</h1>
+                    <h2>Titre de section</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt magnam officiis praesentium rerum. Animi assumenda
                         blanditiis dignissimos eligendi illo iure mollitia, nemo officiis quibusdam rerum sit tempore! Ab amet assumenda at
                         consequatur corporis cum dignissimos, dolor facere incidunt ipsam itaque magni reiciendis reprehenderit sapiente
@@ -22,6 +27,367 @@
                         incidunt inventore iste, maxime modi molestiae molestias nisi pariatur quam quibusdam quod quos vero voluptas
                         voluptatibus! Ad asperiores aut corporis dolor impedit ipsum itaque praesentium quod totam voluptatum? Atque ea
                         earum incidunt inventore, reprehenderit similique suscipit voluptatem! Maiores perferendis quam quis quos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 p-3">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Card header</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-5">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning">Load more</button>
                 </div>
             </div>
         </div>

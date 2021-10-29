@@ -24,7 +24,7 @@ class PageController extends AbstractController
     public function home()
     {
         return $this->render('page/home.html.twig', [
-            'title' => "Bienvenue ici les amis !"
+            'title' => "Ceci est l'emplacement d'une phrase d'accroche pour le site"
         ]);
     }
 }
