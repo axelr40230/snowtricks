@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <section>
+        <div class="container-fluid  h-100">
+            <div class="row">
+                <div class="col p-0 text-center justify-content-center align-self-center">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="{{ asset('images/banner-hp-snowtricks.jpg') }}" alt="Card image">
+                        <div class="card-img-overlay d-flex ">
+                            <h1 class="card-title w-100 text-uppercase d-flex justify-content-center align-self-center text-shadow">{{ title }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+
+                {%  for trick in tricks %}
+
+                <div class="col-12 col-lg-3 p-3">
+                    <div class="card mb-3">
+                        <a href="{{ path('tricks_show', {'slug': trick.slug}) }}">
+                            <img class="w-100" src="{{ trick.image }}" alt="">
+                        </a>
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="{{ path('tricks_show', {'slug': trick.slug}) }}"><h3>{{ trick.title }}</h3></a>
+                            </div>
+                            <div>
+                                <a href="#" class="card-link">Modify</a>
+                                <a href="#" class="card-link">Delete</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {%  endfor %}
+
+                <div class="col-12 py-5 px-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button type="button" class="btn btn-outline-warning">View all tricks</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+{% endblock %}

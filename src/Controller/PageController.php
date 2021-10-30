@@ -17,14 +17,4 @@ class PageController extends AbstractController
             'controller_name' => 'PageController',
         ]);
     }
-
-    /**
-     * @Route("/", name="home")
-     */
-    public function home()
-    {
-        return $this->render('page/home.html.twig', [
-            'title' => "Ceci est l'emplacement d'une phrase d'accroche pour le site"
-        ]);
-    }
 }
