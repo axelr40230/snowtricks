@@ -21,7 +21,7 @@
 
                 {%  for trick in tricks %}
 
-                <div class="col-12 col-lg-3 p-3">
+                <div class="col-12 col-lg-4 p-3">
                     <div class="card mb-3">
                         <a href="{{ path('tricks_show', {'slug': trick.slug}) }}">
                             <img class="w-100" src="{{ trick.image }}" alt="">
@@ -31,7 +31,7 @@
                                 <a href="{{ path('tricks_show', {'slug': trick.slug}) }}"><h3>{{ trick.title }}</h3></a>
                             </div>
                             <div>
-                                <a href="#" class="card-link">Modify</a>
+                                <a href="{{ path('trick_edit', {'slug': trick.slug}) }}" class="card-link">Modify</a>
                                 <a href="#" class="card-link">Delete</a>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
 
                 <div class="col-12 py-5 px-0">
                     <div class="d-flex w-100 justify-content-center">
-                        <button type="button" class="btn btn-outline-warning">View all tricks</button>
+                        <a class="btn btn-outline-primary" href="{{ path('tricks') }}">View all tricks</a>
                     </div>
                 </div>
 
