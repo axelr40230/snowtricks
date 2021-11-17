@@ -37,6 +37,7 @@
                 {{ form_start(formTrick) }}
 
                 {{ form_row(formTrick.title, {'attr': {'placeholder':"Trick Name"}}) }}
+                {{ form_row(formTrick.category) }}
                 {% autoescape false %}
                     {{ form_row(formTrick.content, {'attr': {'placeholder':"Content"}}) }}
                 {% endautoescape %}

@@ -28,9 +28,9 @@
                         </a>
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <div>
-                                <a href="{{ path('tricks_show', {'slug': trick.slug}) }}"><h3>{{ trick.title }}</h3></a>
+                                <a href="{{ path('tricks_show', {'slug': trick.slug}) }}"><h3 class="text-uppercase small">{{ trick.title }}</h3></a>
                             </div>
-                            <div>
+                            <div class="small">
                                 <a href="{{ path('trick_edit', {'slug': trick.slug}) }}" class="card-link">Modify</a>
                                 <a href="#" class="card-link">Delete</a>
                             </div>
