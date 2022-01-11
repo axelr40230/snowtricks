@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="offset-0 col-12 offset-md-4 col-md-4">
+                    <h1 class="mb-5">{{ title }}</h1>
+                    {{ form_start(form) }}
+
+                    {{ form_row(form.username, {'label': 'Nom d\'utilisateur', 'attr': { 'placeholder': 'Choisissez votre username'}}) }}
+                    {{ form_row(form.email, {'label': 'Adresse mail', 'attr': { 'placeholder': 'Saisissez votre email'}}) }}
+                    {{ form_row(form.password, {'label': 'Mot de passe', 'attr': { 'placeholder': 'Choisissez votre mot de passe'}}) }}
+                    {{ form_row(form.confirm_password, {'label': 'Confirmation du mot de passe', 'attr': { 'placeholder': 'Confirmez votre mot de passe'}}) }}
+
+                    <button type="submit" class="btn btn-primary w-100 my-5">Inscription</button>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
